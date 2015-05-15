@@ -1,5 +1,5 @@
-app.factory('movies', [function() {
-    var movies = [
+app.factory('Movies', [function() {
+    var _movies = [
         {
             id: 1,
             title: 'Star Wars IV',
@@ -38,5 +38,7 @@ app.factory('movies', [function() {
         }
     ];
 
-    return movies;
+    return {
+        movies: _movies
+    };
 }]);

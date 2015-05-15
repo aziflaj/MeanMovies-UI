@@ -10,7 +10,9 @@ app.config(['$routeProvider', function($routeProvider) {
         })
 
         .when('/movie/:movieId', {
-
+            templateUrl: 'views/movie.html',
+            controller: 'SingleMovieCtrl',
+            controllerAs: 'mv'
         })
 
         .when('/add', {

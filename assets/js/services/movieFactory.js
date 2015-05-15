@@ -39,6 +39,14 @@ app.factory('Movies', [function() {
     ];
 
     return {
-        movies: _movies
+        movies: _movies,
+        getById: function (id) {
+            var movieId = parseInt(id);
+            for(var i=0; i<_movies.length; i++) {
+                if (_movies[i].id === movieId) {
+                    return _movies[i];
+                }
+            }
+        }
     };
 }]);

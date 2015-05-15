@@ -47,6 +47,10 @@ app.factory('Movies', [function() {
                     return _movies[i];
                 }
             }
+        },
+
+        addMovie: function (mv) {
+            _movies.push(mv);
         }
     };
 }]);

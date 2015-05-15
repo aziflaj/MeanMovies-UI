@@ -12,7 +12,7 @@ app.controller('MoviesCtrl', ['Movies',
                 descr: mv.descr
             };
 
-            //Movies.addMovie(newMovie);
+            Movies.addMovie(newMovie);
 
             console.log(newMovie);
         };
